@@ -1,0 +1,28 @@
+/* add basic styling to the quiz container */
+#quiz-container {
+    margin: 0 auto;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* style the submit button */
+  #submit-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  /* style the choices list */
+  #choices li {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px;
+  }
+  
+  /* highlight selected choice */
+  #choices li.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
