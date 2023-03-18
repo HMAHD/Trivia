@@ -28,7 +28,7 @@ $(document).ready(function () {
     $("#choices").empty();
     for (var i = 0; i < question.choices.length; i++) {
       $("#choices").append(
-        "<li><input type='radio' name='choice' value='" +
+        "<li><input type='radio' name='choice'  value='" +
           i +
           "' id='choice" +
           i +

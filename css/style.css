@@ -1,3 +1,9 @@
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  body, .button:after {
+    background: #ffffff;
+  }
 /* add basic styling to the quiz container */
 #quiz-container {
     margin: 0 auto;
