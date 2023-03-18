@@ -1,7 +1,96 @@
 /* add basic styling to the quiz container */
 #quiz-container {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 800px;
+    text-align: center;
+  }
+  
+  /* style the submit button */
+  #submit-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+  }
+
+  /* style the reset button */
+  #reset-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    margin-top: 20px;
+  }
+  
+  /* style the choices list */
+  #choices li {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 10px;
+    background-color: #eee;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  /* highlight selected choice */
+  #choices li.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  /* style the new question form */
+  #new-question-form {
+    margin-top: 20px;
+  }
+
+  /* style the new question input fields */
+  #new-question-input, #new-answer-input {
+    display: block;
+    width: 95%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  /* style the add question button */
+  #add-question-btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  /* style the question list */
+  #question-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  /* style the question list items */
+  .question-item {
+    background-color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  /* style the question list item question */
+  .question-item .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  /* style the question list item answer */
+  .question-item .answer {
+    font-style: italic;
+  }
+ /* add basic styling to the quiz container */
+#quiz-container {
+    margin: 0 auto;
+    max-width: 600px;
     text-align: center;
   }
   
@@ -24,5 +113,38 @@
   #choices li.selected {
     background-color: #007bff;
     color: #fff;
+  }
+  
+  /* style the question list */
+  #question-list {
+    margin-top: 40px;
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  #question-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+  }
+  
+  #question-list li h4 {
+    margin: 0;
+  }
+  
+  #question-list li p {
+    margin: 5px 0;
+    font-style: italic;
+  }
+  
+  #question-list li button {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
   }
   
