@@ -1,6 +1,3 @@
-# Welcome to Trivia
-
-This is a simple trivia app built with HTML, CSS, and JavaScript. It allows users to answer a series of multiple-choice questions and receive a score based on their answers. Users can also add their own questions to the trivia database.
 
 <div id="header" align="center">
   <img src="https://github.com/HMAHD/Trivia/blob/main/img/Screenshot.png?raw=true" alt="App"<br>
@@ -8,6 +5,10 @@ This is a simple trivia app built with HTML, CSS, and JavaScript. It allows user
     <p><strong><em>"A Trivia/Quiz Game Using JS (and jQuery)"</em></strong></p>
     <!-- to change tagline if necessary -->
     </div> <br>
+
+# Welcome to Trivia
+
+This is a simple trivia app built with HTML, CSS, and JavaScript. It allows users to answer a series of multiple-choice questions and receive a score based on their answers. Users can also add their own questions to the trivia database.
 
 ## Features
 
