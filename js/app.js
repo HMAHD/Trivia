@@ -22,17 +22,17 @@ const quizData = [
   
   // display the current question and its choices
   function showQuestion() {
-    const questionEl = document.getElementById("question");
-    const choicesEl = document.getElementById("choices");
+    const questionEl = $("#question");
+    const choicesEl = $("#choices");
   
-    questionEl.innerText = quizData[currentQuestion].question;
-    choicesEl.innerHTML = "";
+    questionEl.text(quizData[currentQuestion].question);
+    choicesEl.empty();
   
     quizData[currentQuestion].choices.forEach((choice) => {
-      const li = document.createElement("li");
-      li.innerText = choice;
-      li.addEventListener("click", () => checkAnswer(choice));
-      choicesEl.appendChild(li);
+      const li = $("<li></li>");
+      li.text(choice);
+      li.click(() => checkAnswer(choice));
+      choicesEl.append(li);
     });
   }
   
@@ -47,8 +47,8 @@ const quizData = [
     if (currentQuestion < quizData.length) {
       showQuestion();
     } else {
-      const quizContainer = document.getElementById("quiz-container");
-      quizContainer.innerHTML = `<h2>You scored ${score} out of ${quizData.length}</h2>`;
+      const quizContainer = $("#quiz-container");
+      quizContainer.html(`<h2>You scored ${score} out of ${quizData.length}</h2>`);
     }
   }
   
@@ -56,6 +56,11 @@ const quizData = [
   showQuestion();
   
   // add event listener to submit button
-  const submitBtn = document.getElementById("submit-btn");
-  submitBtn.addEventListener("click", () => checkAnswer());
+  const submitBtn = $("#submit-btn");
+  submitBtn.click(() => checkAnswer());
+  
+  // highlight selected choice on click
+  $("#choices li").click(function() {
+    $(this).addClass("selected").siblings().removeClass("selected");
+  });
   
